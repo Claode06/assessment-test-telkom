@@ -1,15 +1,15 @@
-import { useStateContext } from "@/context";
 import React, { useState, useEffect } from "react";
+import { useStateContext } from "@/context";
 
-const HomePage: React.FC = () => {
+const TEsting: React.FC = () => {
   const [_, Dispatch] = useStateContext();
   useEffect(() => {
     Dispatch({
       type: "SET_HEADER",
-      payload: "Telkom Assessment Test",
+      payload: "Testing Page",
     });
   }, []);
-  return <div>HomePage</div>;
+  return <div>TEsting:React.FC</div>;
 };
 
-export default HomePage;
+export default TEsting;
