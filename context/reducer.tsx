@@ -1,7 +1,7 @@
 import { ActionProps, initialStateProps } from "../interface/context.type";
 
 export const initialState: initialStateProps = {
-  header: "Telkom Assessment Test",
+  header: "Github Repositories",
 };
 
 const Reducer = (
