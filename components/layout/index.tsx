@@ -27,7 +27,7 @@ const Layout: React.FC<props> = ({ children }) => {
           </button>
         </div>
       </div>
-      <div className=" h-full overflow-auto">
+      <div className=" h-full flex flex-col justify-between overflow-auto">
         <div>{children}</div>
         <div className=" pb-20">
           <div className="bg-slate-700 px-32  py-4  flex justify-between items-center">

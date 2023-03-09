@@ -51,13 +51,13 @@ const ModalComponent: React.FC<props> = ({
                 <Dialog.Panel
                   className={`${size} ${className} transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all`}
                 >
-                  <Dialog.Title
+                  {/* <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900 text-center"
                   >
-                    {title}
-                  </Dialog.Title>
-                  <div>{children}</div>
+                    <div className="flex justify-end"><button className="font-semibold">x</button></div>
+                  </Dialog.Title> */}
+                  <div className="overflow-auto">{children}</div>
                 </Dialog.Panel>
               </Transition.Child>
             </div>
@@ -69,7 +69,7 @@ const ModalComponent: React.FC<props> = ({
 };
 
 ModalComponent.defaultProps = {
-  size: "w-full max-w-5xl",
+  size: "w-full max-w-7xl",
 };
 
 export default ModalComponent;
