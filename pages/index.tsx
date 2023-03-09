@@ -1,4 +1,8 @@
+import DescriptionComponent from "@/components/home/description";
+import Repositories from "@/components/home/repositories";
 import { useStateContext } from "@/context";
+import Image from "next/image";
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 const HomePage: React.FC = () => {
@@ -6,119 +10,13 @@ const HomePage: React.FC = () => {
   useEffect(() => {
     Dispatch({
       type: "SET_HEADER",
-      payload: "Telkom Assessment Test",
+      payload: "Github Repositories",
     });
   }, []);
   return (
-    <div className="px-32">
-      <div>testing11</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing</div>
-      <div>testing ENDDD</div>
+    <div className="">
+      <DescriptionComponent />
+      <Repositories />
     </div>
   );
 };
